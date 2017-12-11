@@ -1,0 +1,11 @@
+framework module Commercetools {
+  umbrella header "Commercetools.h"
+
+  export *
+  module * { export * }
+}
+
+module Commercetools.Swift {
+    header "Commercetools-Swift.h"
+    requires objc
+}
