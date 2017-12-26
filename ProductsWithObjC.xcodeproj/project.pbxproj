@@ -107,6 +107,7 @@
 				21BC6F6A1FDEE1DB00BBA9A2 /* Frameworks */,
 				21BC6F6B1FDEE1DB00BBA9A2 /* Resources */,
 				21BC6F8F1FDEEC3500BBA9A2 /* Embed Frameworks */,
+				2122A74F1FF2DE8E00BE7148 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -163,6 +164,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2122A74F1FF2DE8E00BE7148 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/Commercetools.framework/strip-framework.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		21BC6F691FDEE1DB00BBA9A2 /* Sources */ = {
