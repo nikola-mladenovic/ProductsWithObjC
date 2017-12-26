@@ -11,13 +11,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     Config *config = [[Config alloc] initWithPath:@"CommercetoolsStagingConfig" loggingEnabled:YES logLevel:LogLevelDebug];
     [Commercetools setConfig:config];
-    
-    [Commercetools loginCustomerWithUsername:@"nikola@commercetools.de" password:@"123456" result:^(Customer * _Nullable customer, NSError * _Nullable error) {
-        if (error == nil) {
-            NSLog(@"Logged in: %@ %@", customer.firstName, customer.lastName);
-        }
-    }];
-    
     // Override point for customization after application launch.
     return YES;
 }
